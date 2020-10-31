@@ -1,11 +1,15 @@
 import React from "react"
 import { render } from "react-dom"
+import { Image } from "react-bootstrap"
+import Banner from "../../assets/images/testBanner.jpg"
 
 class Header extends React.Component{
 
 render(){
     return(
-        <h1 className="page-header text-center">Ryan Tinsley</h1>
+        <div className="header-logo-wrapper">
+            <Image src={Banner} style={StyleSheet.AbsoluteFill}/>
+        </div>
     );
 }
 
