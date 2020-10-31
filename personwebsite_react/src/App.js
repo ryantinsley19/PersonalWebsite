@@ -1,8 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/common/Header"
+import Footer from "./components/common/Footer"
+import MainContainer from "./components/common/MainContainer"
 
 function App() {
   return (
+    <div className="App">
+      <Header />
+      <MainContainer>
+        test3
+      </MainContainer>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+/*
+return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +35,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+  */
