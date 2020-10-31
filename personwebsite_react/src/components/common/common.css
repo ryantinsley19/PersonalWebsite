@@ -1,0 +1,9 @@
+.component-body{
+    padding-top:50px
+}
+
+.card-image{
+    border-radius: 25%;
+    max-width: 100%;
+    heigth: auto;
+}
