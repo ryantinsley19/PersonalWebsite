@@ -12,7 +12,7 @@ export default class About extends Component{
                         <Row className="justify-content-md-center">
                             <Card style={{width: '30rem'}}>
                                 <div className="card-body">
-                                    <h3 className="card-title">Amount Me</h3>
+                                    <h3 className="card-header">Amount Me</h3>
                                     <Card.Img className="card-image" variant="top"src={SelfPic}/>
                                     <p>Mama, just killed a man
                                         Put a gun against his head, pulled my trigger, now he's dead
