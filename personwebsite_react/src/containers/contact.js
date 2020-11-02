@@ -9,7 +9,7 @@ export default class Contact extends Component {
         <div className="component-body">
           <Container>
             <Row className="justify-content-md-center">
-              <Card style={{ width: "50rem" }}>
+              <Card style={{ width: "40rem" }}>
                 <div className="card-body">
                   <div className="card-header">Contact Info</div>
                   <ul className="list-group list-group-flush">
@@ -27,7 +27,6 @@ export default class Contact extends Component {
                       GitHub:{" "}
                       <a href={GitHubUrl}>https://github.com/ryantinsley19/</a>
                     </li>
-                    <li></li>
                   </ul>
                 </div>
               </Card>
