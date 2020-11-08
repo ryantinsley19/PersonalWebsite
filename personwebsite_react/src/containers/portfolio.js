@@ -4,6 +4,7 @@ import "../components/common/common.css";
 import MST from "../assets/images/mst.png";
 import Parallon from "../assets/images/parallon.png";
 import Berkshire from "../assets/images/berkshirehathaway.jpg";
+import PageHeader from "../components/common/PageHeader";
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ export default class Portfolio extends Component {
     const configData = this.state;
     return (
       <div className="portfolio">
+        <PageHeader title="Portfolio" />
         <div className="component-body">
           <Container>
             <CardDeck>

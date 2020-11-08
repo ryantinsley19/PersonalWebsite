@@ -2,17 +2,18 @@ import React, { Component } from "react";
 import { Card, Container, Row } from "react-bootstrap";
 import "../components/common/common.css";
 import SelfPic from "../assets/images/selfShotTemp.jpg";
+import PageHeader from "../components/common/PageHeader";
 
 export default class About extends Component {
   render() {
     return (
       <div className="about">
+        <PageHeader title="About" />
         <div className="component-body">
           <Container>
             <Row className="justify-content-md-center">
               <Card style={{ width: "30rem" }}>
                 <div className="card-body">
-                  <h3 className="card-header">Amount Me</h3>
                   <Card.Img
                     className="card-image"
                     variant="top"

@@ -9,3 +9,8 @@
 .card-block-image {
   height: 10rem;
 }
+
+.page-header {
+  font-size: 50px;
+  text-align: center;
+}
