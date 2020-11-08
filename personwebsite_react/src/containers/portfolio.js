@@ -5,39 +5,38 @@ export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item1: {
-        title: "title1",
-        body: "body 1 info blah blah blah",
-        footer: "footer1",
-      },
-      item2: {
-        title: "title2",
-        body: "body 2 info blah blah blah",
-        footer: "footer2",
-      },
-      item3: {
-        title: "title3",
-        body: "body 3 info blah blah blah",
-        footer: "footer3",
-      },
+      testArray: [
+        { title: "titleTest1", body: "testBody1", footer: "testFooter1" },
+        { title: "titleTest1", body: "testBody1", footer: "testFooter1" },
+        {
+          title: "title1",
+          body: "body 1 info blah blah blah",
+          footer: "footer1",
+        },
+        {
+          title: "title2",
+          body: "body 2 info blah blah blah",
+          footer: "footer2",
+        },
+        {
+          title: "title3",
+          body: "body 3 info blah blah blah",
+          footer: "footer3",
+        },
+      ],
     };
   }
 
   render() {
-    const con = this.state;
+    const configData = this.state;
     return (
       <div className="portfolio">
         <div className="component-body">
           <Container>
             <CardDeck>
-              <CardBox content={con.item1} />
-              <CardBox content={con.item2} />
-              <CardBox content={con.item3} />
-            </CardDeck>
-            <CardDeck>
-              <CardBox content={con.item1} />
-              <CardBox content={con.item2} />
-              <CardBox content={con.item3} />
+              {configData.testArray.map((item) => (
+                <CardBox content={item} />
+              ))}
             </CardDeck>
           </Container>
         </div>
