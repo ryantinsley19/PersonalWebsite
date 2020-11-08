@@ -1,27 +1,31 @@
 import React, { Component } from "react";
 import { Card, Container, CardDeck } from "react-bootstrap";
+import "../components/common/common.css";
+import MST from "../assets/images/mst.png";
+import Parallon from "../assets/images/parallon.png";
+import Berkshire from "../assets/images/berkshirehathaway.jpg";
 
 export default class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.state = {
       testArray: [
-        { title: "titleTest1", body: "testBody1", footer: "testFooter1" },
-        { title: "titleTest1", body: "testBody1", footer: "testFooter1" },
         {
-          title: "title1",
-          body: "body 1 info blah blah blah",
-          footer: "footer1",
+          image: Parallon,
+          jobTitle: "Business Systems Analyst III",
+          body:
+            "Developed some stuff, made sure stuff didn't break, SQL'd, turned stuff off and on again",
+          footer: "2015-2020",
         },
         {
-          title: "title2",
-          body: "body 2 info blah blah blah",
-          footer: "footer2",
+          image: MST,
+          jobTitle: "BS in Computer Science",
+          footer: "2012-2015",
         },
         {
-          title: "title3",
-          body: "body 3 info blah blah blah",
-          footer: "footer3",
+          image: Berkshire,
+          jobTitle: "Technology Analyst Intern",
+          footer: "5/2014-8/2014",
         },
       ],
     };
@@ -50,7 +54,12 @@ function CardBox(props) {
     <Card>
       <Card.Body>
         <Card.Title>{props.content.title}</Card.Title>
-        <Card.Body>{props.content.body}</Card.Body>
+        <Card.Img
+          className="card-block-image"
+          variant="top"
+          src={props.content.image}
+        />
+        <Card.Body>{props.content.jobTitle}</Card.Body>
         <Card.Footer>{props.content.footer}</Card.Footer>
       </Card.Body>
     </Card>

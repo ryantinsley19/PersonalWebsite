@@ -2,8 +2,13 @@
   text-align: center;
 }
 
-.component-body{
+.component-body {
   padding-top: 50px;
+}
+
+.card-logo {
+  height: 40vmin;
+  width: 100pc;
 }
 
 .App-logo {

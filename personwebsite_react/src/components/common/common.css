@@ -5,3 +5,7 @@
 .card-image {
   max-width: 100%;
 }
+
+.card-block-image {
+  height: 10rem;
+}
