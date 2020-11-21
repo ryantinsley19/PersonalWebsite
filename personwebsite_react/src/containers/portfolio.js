@@ -5,6 +5,7 @@ import MST from "../assets/images/mst.png";
 import Parallon from "../assets/images/parallon.png";
 import Berkshire from "../assets/images/berkshirehathaway.jpg";
 import PageHeader from "../components/common/PageHeader";
+import { ParallonUrl, MstUrl, BerkshireUrl } from "../utils/constants";
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ export default class Portfolio extends Component {
       testArray: [
         {
           image: Parallon,
+          imageUrl: ParallonUrl,
           jobTitle: "Business Systems Analyst III",
           body:
             "Developed some stuff, made sure stuff didn't break, SQL'd, turned stuff off and on again",
@@ -20,11 +22,13 @@ export default class Portfolio extends Component {
         },
         {
           image: MST,
+          imageUrl: MstUrl,
           jobTitle: "BS in Computer Science",
           footer: "2012-2015",
         },
         {
           image: Berkshire,
+          imageUrl: BerkshireUrl,
           jobTitle: "Technology Analyst Intern",
           footer: "5/2014-8/2014",
         },
@@ -56,11 +60,13 @@ function CardBox(props) {
     <Card>
       <Card.Body>
         <Card.Title>{props.content.title}</Card.Title>
-        <Card.Img
-          className="card-block-image"
-          variant="top"
-          src={props.content.image}
-        />
+        <Card.Link href={props.content.imageUrl} target="_blank">
+          <Card.Img
+            className="card-block-image"
+            variant="top"
+            src={props.content.image}
+          />
+        </Card.Link>
         <Card.Body>{props.content.jobTitle}</Card.Body>
         <Card.Footer>{props.content.footer}</Card.Footer>
       </Card.Body>
