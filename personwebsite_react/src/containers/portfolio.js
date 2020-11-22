@@ -55,7 +55,7 @@ export default class Portfolio extends Component {
   }
 }
 
-function CardBox(props) {
+var CardBox = (props) => {
   return (
     <Card>
       <Card.Body>
@@ -72,4 +72,4 @@ function CardBox(props) {
       </Card.Body>
     </Card>
   );
-}
+};
